@@ -2,7 +2,7 @@
 
 ## Rendu pour le 29/01/2021 à minuit max.
 
-# Présentation du jeu (Game-Design).
+# Présentation du jeu.
 ...
 
 # Direction artistique.
