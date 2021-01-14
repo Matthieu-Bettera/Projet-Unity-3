@@ -53,7 +53,7 @@ public class LevelGeneration : MonoBehaviour
                 transform.position = newPos;
 
                 int rand = Random.Range(0, rooms.Length);
-                Instantiate(rooms[rand], transform.position, Quaternion.identity);
+                SpawnObject(rand);
 
                 direction = Random.Range(1, 6);
                 if (direction == 3)
@@ -87,7 +87,7 @@ public class LevelGeneration : MonoBehaviour
                 transform.position = newPos;
 
                 int rand = Random.Range(0, rooms.Length);
-                Instantiate(rooms[rand], transform.position, Quaternion.identity);
+                SpawnObject(rand);
 
                 direction = Random.Range(3, 6);
 
@@ -113,7 +113,7 @@ public class LevelGeneration : MonoBehaviour
                 if (downCounter >= 2)
                 {
                     roomDetection.GetComponent<RoomTypes>().RoomDestruction();
-                    Instantiate(rooms[3], transform.position, Quaternion.identity);
+                    SpawnObject(3);
                 }
                 else
                 {
@@ -123,7 +123,7 @@ public class LevelGeneration : MonoBehaviour
                     {
                         randBottomRoom = 1;
                     }
-                    Instantiate(rooms[randBottomRoom], transform.position, Quaternion.identity);
+                    SpawnObject(randBottomRoom);
                 }
             }
 
@@ -133,7 +133,7 @@ public class LevelGeneration : MonoBehaviour
                 transform.position = newPos;
 
                 int rand = Random.Range(2, 4);
-                Instantiate(rooms[rand], transform.position, Quaternion.identity);
+                SpawnObject(rand);
 
                 direction = Random.Range(1, 6);
                 if (direction == 5)
@@ -183,5 +183,16 @@ public class LevelGeneration : MonoBehaviour
 
         
 
+    }
+
+    void SpawnObject(int number)
+    {
+        List<GameObject> roomSpawned = new List<GameObject>();
+
+        roomSpawned.Add(Instantiate(rooms[number], transform.position, Quaternion.identity) as GameObject);
+
+       
+      
+     
     }
 }
