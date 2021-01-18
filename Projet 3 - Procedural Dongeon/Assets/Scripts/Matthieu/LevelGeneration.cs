@@ -15,6 +15,8 @@ public class LevelGeneration : MonoBehaviour
     public LayerMask roomLayer;
     int downCounter;
 
+    List<GameObject> roomSpawned = new List<GameObject>();
+
     [Header("Level Limits")]
     public float minX;
     public float maxX;
@@ -35,10 +37,26 @@ public class LevelGeneration : MonoBehaviour
 
     private void Update()
     {
+        int lastRoomNumber = roomSpawned.Count;
+
         if (isStopped)
         {
+            if (lastRoomNumber >= 4)
+            {
+                GameObject lastRoom = roomSpawned[lastRoomNumber - 1];
+
+                lastRoom.GetComponent<RoomTypes>().isLocked = true;
+            }
             CancelInvoke();
         }
+
+        Debug.Log(roomSpawned.Count);
+
+      
+
+     
+
+
     }
 
     void Move()
@@ -187,7 +205,7 @@ public class LevelGeneration : MonoBehaviour
 
     void SpawnObject(int number)
     {
-        List<GameObject> roomSpawned = new List<GameObject>();
+     
 
         roomSpawned.Add(Instantiate(rooms[number], transform.position, Quaternion.identity) as GameObject);
 

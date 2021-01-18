@@ -5,6 +5,7 @@ using UnityEngine;
 public class RoomTypes : MonoBehaviour
 {
     public int type;
+    public bool isLocked = false;
 
     public void RoomDestruction()
     {
