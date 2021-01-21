@@ -13,14 +13,19 @@ public class PatrolScript : MonoBehaviour
     public float minX;
     public float maxX;
     public float minY;
-    public float maxY;
-
+    public float maxY; 
+    
+    public GameObject projectile;
+    private float timeS;
+    public float startTimeS;
 
     // Start is called before the first frame update
     void Start()
     {
         waitTime = startWaitTime;
         moveSpots.position = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
+
+        timeS = startTimeS;
     }
 
     // Update is called once per frame
@@ -40,7 +45,19 @@ public class PatrolScript : MonoBehaviour
         {
             waitTime -= Time.deltaTime;
         }
-           
+
+
+        if (timeS <= 0)
+        {
+            Instantiate(projectile, transform.position, Quaternion.identity);
+            timeS = startTimeS;
         }
 
+        else
+        {
+            timeS -= Time.deltaTime;
+        }
     }
+
+
+}
