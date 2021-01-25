@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveVector;
     private Rigidbody2D _rigidBody2D;
 
+    public Vector2 lastMove;
+
     void Start()
     {
         _rigidBody2D = GetComponent<Rigidbody2D>();
@@ -29,6 +31,14 @@ public class PlayerMovement : MonoBehaviour
         if (moveVector.magnitude > 1)
         { 
             moveVector = moveVector.normalized;
+        }
+
+        if (moveVector.magnitude != 0)
+        {
+            if (moveVector.magnitude > 0.5f)
+            {
+                lastMove = moveVector.normalized;
+            }
         }
         
         _rigidBody2D.velocity = moveVector * speed;
