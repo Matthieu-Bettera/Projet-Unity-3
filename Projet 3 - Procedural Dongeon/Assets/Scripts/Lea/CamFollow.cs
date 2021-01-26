@@ -4,29 +4,40 @@ using UnityEngine;
 
 public class CamFollow : MonoBehaviour
 {
-    GameObject targetObject;
     Transform target;
+    Rigidbody2D rb2D;
 
-    public float smoothTime = 0.25f;
-    Vector3 offset;
-    Vector3 velocity;
+    LayerMask mask;
+
+    public float rayon;
+    public Vector2 direc;
+    public float dist;
 
     void Start()
     {
-        offset = transform.position - target.position;
-        velocity = Vector3.zero;
+        mask = LayerMask.GetMask("Room");
     }
 
     void Update()
     {
-        if (targetObject == null)
+        if (target == null)
         {
-            targetObject = GameObject.FindWithTag("Player");
-            target = targetObject.transform;
+            target = GameObject.Find("Player(Clone)").GetComponent<Transform>();
+            rb2D = GameObject.Find("Player(Clone)").GetComponent<Rigidbody2D>();
+
+            // Start place
+            transform.position = new Vector3(target.position.x, target.position.y, -10f);
         }
 
-        transform.position = new Vector3 (target.position.x, target.position.y, -10f);
+        RaycastHit2D hit = Physics2D.CircleCast(target.position, rayon, direc, dist, mask);
 
-        //transform.position = Vector3.SmoothDamp( transform.position, target.position + offset, ref velocity, smoothTime );
+        if (hit.collider != null)
+        {
+            Debug.Log("esdrfbe");
+
+            transform.position = new Vector3(hit.transform.position.x, hit.transform.position.y, -10f);
+        }
+
     }
+
 }
