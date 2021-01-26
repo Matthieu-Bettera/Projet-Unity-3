@@ -123,3 +123,5 @@ MonoBehaviour:
   maxX: -2.71
   minY: 3.03
   maxY: -2.43
+  projectile: {fileID: 6630864026671094955, guid: 0a2cfa1b530fb6a459e444661a5e400a, type: 3}
+  startTimeS: 0
