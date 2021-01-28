@@ -27,7 +27,6 @@ public class Inventory : MonoBehaviour
         slots[0] = GameObject.Find("Slot 1");
         slots[1] = GameObject.Find("Slot 2");
         slots[2] = GameObject.Find("Slot 3");
-        slots[3] = GameObject.Find("Slot 4");
 
     }
 }

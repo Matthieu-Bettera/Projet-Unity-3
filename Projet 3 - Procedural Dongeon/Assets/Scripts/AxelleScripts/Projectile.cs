@@ -36,6 +36,11 @@ public class Projectile : MonoBehaviour
         {
             DestroyProjectile();
         }
+
+        if (other.CompareTag("Wall"))
+        {
+            DestroyProjectile();
+        }
     }
     
         
