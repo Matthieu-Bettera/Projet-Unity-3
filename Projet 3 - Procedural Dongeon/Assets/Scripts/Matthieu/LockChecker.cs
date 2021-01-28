@@ -7,12 +7,21 @@ public class LockChecker : MonoBehaviour
     public RoomTypes type;
     public GameObject door;
 
+    bool alreadyLocked = false;
+
     private void Update()
     {
         if (type.isLocked == true)
         {
-            GameObject instance = (GameObject)Instantiate(door, transform.position, transform.rotation);
-            instance.transform.parent = transform;
+            if(alreadyLocked == false)
+            {
+                GameObject instance = (GameObject)Instantiate(door, transform.position, transform.rotation);
+                instance.transform.parent = transform;
+
+                alreadyLocked = true;
+            }
+
         }
+    
     }
 }

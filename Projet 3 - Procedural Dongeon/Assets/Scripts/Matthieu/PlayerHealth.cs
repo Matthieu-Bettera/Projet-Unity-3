@@ -18,6 +18,8 @@ public class PlayerHealth : MonoBehaviour
 
     private void Start()
     {
+        healthbar = FindObjectOfType<Healthbar>();
+
         health = maxHealth;
     }
 
