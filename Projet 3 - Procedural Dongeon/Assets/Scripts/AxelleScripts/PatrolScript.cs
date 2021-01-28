@@ -23,9 +23,14 @@ public class PatrolScript : MonoBehaviour
     void Start()
     {
         waitTime = startWaitTime;
-        moveSpots.position = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
+        moveSpots.position = transform.position;
 
         timeS = startTimeS;
+
+        minX = transform.position.x - 1.5f;
+        maxX = transform.position.x + 1.5f;
+        minY = transform.position.x - 1.5f;
+        maxY = transform.position.x + 1.5f;
     }
 
     // Update is called once per frame
