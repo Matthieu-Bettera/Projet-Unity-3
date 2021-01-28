@@ -19,4 +19,15 @@ public class Inventory : MonoBehaviour
         // Every inventory create in the scenery is the exact same as this one --> there is only one !
         current = this;
     }
+
+    void Start()
+    {
+        //Get all the slots
+        //Pas obti du tout mais je n'arrive pas a le faire avec un for
+        slots[0] = GameObject.Find("Slot 1");
+        slots[1] = GameObject.Find("Slot 2");
+        slots[2] = GameObject.Find("Slot 3");
+        slots[3] = GameObject.Find("Slot 4");
+
+    }
 }

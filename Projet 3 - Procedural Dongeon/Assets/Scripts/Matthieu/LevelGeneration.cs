@@ -6,7 +6,7 @@ public class LevelGeneration : MonoBehaviour
 {
     public Transform[] startingPositions;
     public GameObject[] rooms;
-
+    public GameObject player;
     
     int direction;
     public float repeatSpeed=0.25f;
@@ -27,7 +27,10 @@ public class LevelGeneration : MonoBehaviour
     {
         int randStartingPos = Random.Range(0, startingPositions.Length);
 
+
+
         transform.position = startingPositions[randStartingPos].position;
+        Instantiate(player, transform.position, Quaternion.identity);
         Instantiate(rooms[0], transform.position, Quaternion.identity);
 
         direction = Random.Range(1, 6);
