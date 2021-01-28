@@ -16,7 +16,6 @@ public class WaitSeconds : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        Debug.Log(timer);
 
         if(timer >= 2.5f)
         {
