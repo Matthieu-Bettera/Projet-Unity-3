@@ -3,7 +3,7 @@
 ## Rendu pour le 29/01/2021 à minuit max.
 
 # Présentation du jeu.
-Notre jeu est un Dungeon Escape, dont le but est de s'aventurer à travers les salles recouvertes d'ennemies. Le joueur doit trouver le moyen de sortir, sur son chemain se trouve des potions, ainsi qu'une clé. Une clé qui mène à la libertée. Quoi que... 
+Notre jeu est un Dungeon Escape, dont le but est de s'aventurer à travers les salles recouvertes d'ennemies. Le joueur doit trouver le moyen de sortir, sur son chemin se trouve des potions, ainsi qu'une clé. Une clé qui mène à la libertée. Quoi que... 
 
 # Direction artistique.
 Nous avons décider de partir en 2D pixel art, tout les graphismes du jeu on été faites par nos soins.
