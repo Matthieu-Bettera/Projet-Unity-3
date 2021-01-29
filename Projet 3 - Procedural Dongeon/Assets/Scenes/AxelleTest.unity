@@ -401,6 +401,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPatrol
       objectReference: {fileID: 0}
+    - target: {fileID: 2460986066768782043, guid: 663579ec1a780dd40919d323ad499d80, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6798182683241491610, guid: 663579ec1a780dd40919d323ad499d80, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.34
@@ -445,7 +449,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2460986066837324920, guid: 663579ec1a780dd40919d323ad499d80, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 663579ec1a780dd40919d323ad499d80, type: 3}
 --- !u!1001 &6128399589712458311
 PrefabInstance:
