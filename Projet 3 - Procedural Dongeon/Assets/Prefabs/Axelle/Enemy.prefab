@@ -50,12 +50,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &6128399590548935935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68,11 +68,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbef8d256da8497458c33d329262bf17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  stoppingDitance: 6
-  retreatDistance: 3
-  startTimeS: 0.81
-  projectile: {fileID: 6630864026671094955, guid: 0a2cfa1b530fb6a459e444661a5e400a, type: 3}
+  speed: 0
+  stoppingDitance: 0
+  retreatDistance: 0
+  startTimeS: 0.5
+  projectile: {fileID: 7879395730628114909, guid: c9c89ebed102e1f41b9f7b0d3c48630d, type: 3}
 --- !u!61 &6128399590548935932
 BoxCollider2D:
   m_ObjectHideFlags: 0
