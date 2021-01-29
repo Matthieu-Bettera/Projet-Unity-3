@@ -176,8 +176,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthbar: {fileID: 0}
-  maxHealth: 74.45
-  health: -0.83
+  maxHealth: 100
+  health: 0
   smoothing: 5
 --- !u!114 &-3275700304283943007
 MonoBehaviour:
@@ -191,9 +191,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 691b39cb1544ca042b9fa2016227d1e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items: 00000000000000000000000000000000
+  items: 000000000000000000000000
   slots:
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

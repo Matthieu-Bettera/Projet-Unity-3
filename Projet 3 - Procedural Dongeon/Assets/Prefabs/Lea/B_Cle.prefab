@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5845998005066624384}
   - component: {fileID: 4530482863925201235}
   - component: {fileID: 2123862106737268759}
+  - component: {fileID: 6716682457173437094}
   m_Layer: 5
   m_Name: B_Cle
   m_TagString: Untagged
@@ -118,4 +119,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4530482863925201235}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6716682457173437094}
+        m_TargetAssemblyTypeName: Key, Assembly-CSharp
+        m_MethodName: SetUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6716682457173437094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2440600199084127583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 959e50606e1450b4b927f0b75b8d24f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayon: 2
+  direc: {x: 3, y: 3}
+  openDoor: 0
