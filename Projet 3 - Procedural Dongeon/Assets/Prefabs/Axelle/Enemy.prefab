@@ -67,11 +67,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbef8d256da8497458c33d329262bf17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 0
   stoppingDitance: 6
   retreatDistance: 3
   startTimeS: 0.81
-  projectile: {fileID: 6630864026671094955, guid: 0a2cfa1b530fb6a459e444661a5e400a, type: 3}
+  projectile: {fileID: 7879395730628114909, guid: c9c89ebed102e1f41b9f7b0d3c48630d, type: 3}
 --- !u!61 &6128399590548935932
 BoxCollider2D:
   m_ObjectHideFlags: 0
