@@ -17,5 +17,8 @@ Les animations du player que nous n'avons pas réussis à faire.
 
 # Credits 
 La musique : https://filmmusic.io/song/3492-chee-zee-caves-v2
+Le miro : https://miro.com/welcomeonboard/3QKlwccXpIidcX9soPbovaxb8qOORqGmEgeHvjKd6ZgDdd6En4T3OAT9JAzxDs50
+Le trello : https://trello.com/projet3code/home
+La vidéo youtube: 
 
 Le projet à été réalisé par DELANNOY Matthieu ; VLIEGHE Léa ; DUVAL Axelle.
