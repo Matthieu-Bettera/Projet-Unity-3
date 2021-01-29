@@ -22,6 +22,6 @@ Le miro : https://miro.com/welcomeonboard/3QKlwccXpIidcX9soPbovaxb8qOORqGmEgeHvj
 
 Le trello : https://trello.com/projet3code/home
 
-La vidéo youtube: 
+La vidéo youtube: https://youtu.be/VQ5piX9b7sY
 
 Le projet à été réalisé par DELANNOY Matthieu ; VLIEGHE Léa ; DUVAL Axelle.
